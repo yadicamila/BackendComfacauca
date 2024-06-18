@@ -30,7 +30,11 @@ public class Venta {
     @JoinColumn(name = "afiliado_id")
     private Afiliado afiliado;
 
+    //original
     @OneToMany(mappedBy = "venta")
     private Set<DetalleVenta> detallesVenta;
 
+   // @ManyToOne
+    //@JoinColumn(name = "detalle_venta_id")
+    //private DetalleVenta detalleVenta;
 }

@@ -19,10 +19,16 @@ public class DetalleVenta {
     Integer idDetalleVenta;
     float cantidad;
     float subtotal;
-    
+
+    //asi esta originalmente
+
     @ManyToOne
     @JoinColumn(name = "venta_id")
     private Venta venta;
+
+
+    //@OneToMany(mappedBy = "detalleVenta")
+    //private Set<Venta> venta;
 
     @ManyToOne
     @JoinColumn(name = "servicio_id")
