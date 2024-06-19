@@ -20,6 +20,6 @@ public class Servicio {
     String nombre;
     Float tarifa_plena ;
 
-    @OneToMany(mappedBy = "servicio", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<Tarifa> tarifas;
+   // @OneToMany(mappedBy = "servicio", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    //private Set<Tarifa> tarifas;
 }

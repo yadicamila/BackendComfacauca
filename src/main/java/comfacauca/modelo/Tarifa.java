@@ -17,11 +17,12 @@ public class Tarifa {
     Integer idTarifa;
     String categoria;
     Float descuento;
-    Float tarifaFinal;
+    //Float tarifaFinal;
+    String estado;
 
-    @ManyToOne
-    @JoinColumn(name = "servicio_id")
-    private Servicio servicio;
+   // @ManyToOne
+    //@JoinColumn(name = "servicio_id")
+    //private Servicio servicio;
 
     @ManyToOne
     @JoinColumn(name = "centro_recreativo_id")
